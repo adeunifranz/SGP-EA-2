@@ -35,6 +35,10 @@ class PersonaController extends Controller
      * @return mixed
      */
 
+    public function actionEstadistica() {
+        $model = new Persona();        
+    }
+
     public function actionTest() {       
         $model = \app\models\Prestamo::get_VIGENTE(1);
         echo "<pre>";

@@ -53,6 +53,14 @@ class PrestamoController extends Controller
      * @return mixed
      */
 
+    public function actionEstadistica()
+    {
+
+Yii::$app->db->createCommand('
+        SELECT CONCAT(NOMB_PER," ",APPA_PER," ",APMA_PER) AS "NOMBRE", COUNT(ID_PER) AS "Nº VECES" FROM `prestamo` JOIN `persona` ON `PERS_PRE`=`ID_PER` WHERE `PERS_PRE`=`ID_PER`GROUP BY `ID_PER`
+        ')->queryAll();
+    }
+
     public function actionIndex()
     {
         $searchModel = new PrestamoSearch();
