@@ -148,13 +148,41 @@ use mdm\admin\components\Helper;
                      'label'   => 'Prestamos',
                      'icon'    => 'money',
                      'url'     => ['/prestamo'],
-                     'visible' => Helper::checkRoute('prestamo/index')
+                     'visible' => Helper::checkRoute('prestamo/index'),
+                     'items'    => [
+                                    [
+                                     'label'   => 'Registrar nuevo',
+                                     'icon'    => 'plus',
+                                     'url'     => ['/prestamo/create'],
+                                     'visible' => Helper::checkRoute('prestamo/create')
+                                    ],
+                                    [
+                                     'label'   => 'Consulta',
+                                     'icon'    => 'search',
+                                     'url'     => ['/prestamo'],
+                                     'visible' => Helper::checkRoute('prestamo')
+                                    ],
+                                   ],
                     ],
                     [
                      'label'   => 'Devoluciones',
                      'icon'    => 'dropbox',
                      'url'     => ['/devolucion'],
-                     'visible' => Helper::checkRoute('devolucion/index')
+                     'visible' => Helper::checkRoute('devolucion/index'),
+                     'items'    => [
+                                    [
+                                     'label'   => 'Registrar nuevo',
+                                     'icon'    => 'plus',
+                                     'url'     => ['/devolucion/create'],
+                                     'visible' => Helper::checkRoute('devolucion/create')
+                                    ],
+                                    [
+                                     'label'   => 'Consulta',
+                                     'icon'    => 'search',
+                                     'url'     => ['/devolucion'],
+                                     'visible' => Helper::checkRoute('devolucion')
+                                    ],
+                                   ],
                     ],
                     [
                      'label'   => 'Reportes',
@@ -166,6 +194,19 @@ use mdm\admin\components\Helper;
                                       'url'     => ['/persona/reporte'],
                                       'target'  => '_blank', 
                                       'visible' => Helper::checkRoute('/persona/reporte')
+                                    ]
+                                  ]
+                    ],
+                    [
+                     'label'   => 'Estadisticas',
+                     'icon'    => 'bar-chart',
+                     'items'   => [
+                                    [
+                                      'label'   => 'Personas',
+                                      'icon'    => 'address-book-o',
+                                      'url'     => ['/persona'],
+                                      'target'  => '_blank', 
+                                      'visible' => Helper::checkRoute('/persona')
                                     ]
                                   ]
                     ],
