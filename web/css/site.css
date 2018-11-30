@@ -1,0 +1,176 @@
+html,
+body {
+    height: 100%;
+}
+
+.carousel-inner {
+    margin-left: 20%; 
+}
+.carousel-inner img {
+    margin-top: 20px;
+    width:  50%;
+    height: 259px;
+    max-height: 360px;
+    border: 7px;
+}
+.my-wrapper
+{
+    background-image: url("../img/unifranz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/*.logo-lg {
+    background: rgba(0,0,0, 1);
+}
+
+.user-panel {
+    background: rgba(0,0,0, 1);
+}
+*/
+.sidebar-menu>li>a>.fa, .sidebar-menu>li>a>.glyphicon, .sidebar-menu>li>a>.ion {
+    width: 20px;
+    color: orange;
+}
+
+.sidebar-menu .treeview-menu>li.active>a, .skin-unifranz .sidebar-menu .treeview-menu>li>a:hover {
+    background: #374850 !important;
+}
+
+.content p .btn {
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-right: 2px solid rgba(0,0,0,0.2);
+    width: 24.5%;
+}
+td img {
+    border-radius: 0px 0px 15px 0px;
+      background-color: rgba(255,255,255, 0.7);
+      box-shadow: inset 3px 3px 3px 
+              rgba(255,255,255,.7), 
+              inset -2px -2px 3px 
+              rgba(0,0,0,.1), 
+              2px 2px 10px 
+              rgba(0,0,0,.1);
+
+}
+.user-panel>.image>img {
+    background: white;
+}
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
+    background: white;
+}

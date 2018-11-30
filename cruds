@@ -1,0 +1,2 @@
+call yii  gii/crud  --controllerClass=app\\controllers\\PersonaController --modelClass=app\models\Persona --viewPath=@app/views/persona --searchModelClass=app\models\PersonaSearch
+call yii  gii/crud  --controllerClass=app\\controllers\\ArticuloController --modelClass=app\models\Articulo --viewPath=@app/views/articulo --searchModelClass=app\models\ArticuloSearch

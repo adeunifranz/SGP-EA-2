@@ -1,0 +1,9 @@
+call yii gii/model --tableName=user --modelClass=User --interactive=0 --overwrite=1
+call yii gii/model --tableName=persona --modelClass=Persona --interactive=0 --overwrite=1
+call yii gii/model --tableName=articulo --modelClass=Articulo --interactive=0 --overwrite=1
+call yii gii/model --tableName=foto --modelClass=Foto --interactive=0 --overwrite=1
+call yii gii/model --tableName=computadora --modelClass=Computadora --interactive=0 --overwrite=1
+call yii gii/model --tableName=prestado --modelClass=Prestado --interactive=0 --overwrite=1
+call yii gii/model --tableName=prestamo --modelClass=Prestamo --interactive=0 --overwrite=1
+call yii gii/model --tableName=piso --modelClass=Piso --interactive=0 --overwrite=1
+call yii gii/model --tableName=ambiente --modelClass=Ambiente --interactive=0 --overwrite=1
